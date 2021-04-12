@@ -13,13 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'frontend'], function()
-    {
-        Route::resource('home', 'HomeController');
-    });
-
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::get('user', 'App\Http\Controllers\ManagementUserController@index');
-Route::resource('user', 'App\Http\Controllers\ManagementUserController');
